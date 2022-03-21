@@ -25,7 +25,7 @@ public class Main {
 
 
     public static void main(String args[]) {
-        String slovo = ZKlavesnice.readString("Napis svoje meno ");
+        String slovo = ZKlavesnice.readString("Napíšš svoje meno ");
         System.out.println("Ahoj " + slovo + ".");
 
 
