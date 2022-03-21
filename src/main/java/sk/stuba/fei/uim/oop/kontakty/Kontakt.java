@@ -27,4 +27,17 @@ public class Kontakt {
             System.out.println();
         }
     }
+
+    @Override
+    public String toString() {
+        return this.meno + " " + this.priezvisko;
+    }
+
+    public String getMeno() {
+        return meno;
+    }
+
+    public String getPriezvisko() {
+        return priezvisko;
+    }
 }

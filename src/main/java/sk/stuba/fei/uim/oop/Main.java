@@ -1,5 +1,6 @@
 package sk.stuba.fei.uim.oop;
 
+import sk.stuba.fei.uim.oop.kontakty.Absolvent;
 import sk.stuba.fei.uim.oop.kontakty.Kontakt;
 import sk.stuba.fei.uim.oop.utility.ZKlavesnice;
 
@@ -36,11 +37,12 @@ public class Main {
         System.out.println(ANSI_GREEN_BACKGROUND + ANSI_RED + "This text has a green background and red text!" + ANSI_RESET);
 
         var igor = new Kontakt("Igoro Najsel");
-        var pato = new Kontakt("Pato", "Liska");
+        var pato = new Absolvent("Pato", "Liska", "mgr");
         var matej = new Kontakt("Matej Zahorec");
-        Kontakt[]  znamiMateja = new Kontakt[] {igor, pato};
-        matej.pridajZnamych(znamiMateja);
-        matej.vypisZnamych();
+
+        System.out.println(igor.toString());
+        System.out.println(pato.toString());
+
 
     }
 
